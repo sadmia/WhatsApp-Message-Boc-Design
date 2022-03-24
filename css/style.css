@@ -1,0 +1,400 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	width: 100%;
+	height: 100%;
+	background-color: #333;
+	box-sizing: border-box;
+	font-family: arial;
+}
+
+.WhatsappSection {
+	width: 350px;
+	height: 550px;
+	background-color: #fff;
+	box-sizing: border-box;
+	margin: 50px auto;
+	overflow: hidden;
+}
+
+.haderSection {
+	width: 100%;
+	height: 10%;
+	background-color: #075E55;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.imagesAndName {
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	position: relative;
+}
+.imagesDiv {
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #fff;
+	overflow: hidden;
+	cursor: pointer;
+}
+.imagesDiv input {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0px;
+	height: 0px;
+	opacity: 0;
+}
+.imagesDiv:hover .hoverCamera {
+	display: block;
+}
+.hoverCamera {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;background-color: #3335;
+	display: none;
+}
+.hoverCamera i {
+	padding: 15px;
+	font-size: 20px;
+	color: #fff;
+}
+.imagesDiv img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.nameText {
+	position: absolute;
+	left: 70px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #fff;
+	font-size: 18px;
+}
+
+.iconDiv {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.iconSetList {
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 0;
+	margin-bottom: 0;
+}
+.iconSetList li {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	overflow: hidden;
+	display: inline-block;
+	position: relative;
+}
+.iconSetList li i {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 18px;
+	color: #fff;
+	padding: 15px;
+	cursor: pointer;
+}
+
+.iconSetList li i:active {
+	background-color: #fff2;
+}
+
+
+.contentSection {
+	width: 100%;
+	height: 80%;
+	background-color: #EAE3D9;
+	position: relative;
+	overflow: hidden;
+}
+
+.footerSection {
+	width: 100%;
+	height: 10%;
+	background-color: #EAE3D9;
+	box-sizing: border-box;
+	display: grid;
+	grid-template-columns: 9fr 2fr;
+}
+.inputBox {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.inputBox input {
+	width: 90%;
+	position: absolute;
+	left: 5%;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 10px 40px;
+	box-sizing: border-box;
+	font-size: 16px;
+	color: #333;
+	background-color: #fff;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+}
+.inputBox .konaMark {
+	position: absolute;
+	right: 3px;
+	top: 31%;
+	transform: translateY(-50%);
+	clip-path: polygon(0 100%, 0 0, 100% 0);
+	width: 15px;
+	height: 15px;
+	z-index: 0;
+	background-color: #fff;
+}
+.inputBox label {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 30px;
+	overflow: hidden;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 2;
+	font-size: 18px;
+	color: #3339;
+	cursor: pointer;
+}
+.inputBox label:first-child {
+	left: 20px;
+}
+
+.inputBox label input {
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	position: 0;
+}
+
+.inputBox label:last-child {
+	right: 20px;
+}
+
+.VoiceDiv {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.voiceSection {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	background-color: #03867D;
+	overflow: hidden;
+}
+.voiceSection i {
+	padding: 13px 16px;
+	font-size: 20px;
+	color: #fff;
+}
+
+
+
+
+.messageSection {
+	width: 100%;
+	/*height: 100%;*/
+	/*overflow-y: scroll;*/
+	box-sizing: border-box;
+	padding: 0px 10px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.messageMe {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 2fr 10fr;
+	margin: 10px 0px;
+	position: relative;
+}
+.messageMe:after {
+	position: absolute;
+	content: "";
+	right: -8px;
+	top: 0px;
+	width: 10px;
+	height: 10px;
+	background-color: #DAF7C1;
+	clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+.messTex {
+	text-align: right;
+}
+.messTex .InDiv {
+	text-align: left;
+	font-size: 16px;
+	border-radius: 5px 0px 5px 5px;
+	background-color: #DAF7C1;
+	padding: 7px;
+	display: inline-block;
+}
+.timeS {
+	font-size:12px; 
+	color: #3337;
+	padding: 3px 0px;
+	text-align: right;
+}
+.timeS i {
+	margin-left: 3px;
+	font-size: 10px;
+}
+
+
+
+.messageYou {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 10fr 2fr;
+	margin: 10px 0px;
+	position: relative;
+}
+.messageYou:after {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: -8px;
+	width: 10px;
+	height: 10px;
+	background-color: #fff;
+	clip-path: polygon(100% 100%, 0 0, 100% 0);
+}
+.messageYou .messTex {
+	text-align: left;
+}
+.messageYou .messTex .InDiv {
+	text-align: left;
+	font-size: 16px;
+	border-radius: 5px 5px 5px 0px;
+	background-color: #fff;
+	padding: 7px;
+	display: inline-block;
+}
+.messageYou .timeS {
+	font-size:12px; 
+	color: #3337;
+	text-align: right;
+	padding: 3px 0px;
+}
+.messageYou .timeS i {
+	margin-left: 3px;
+	font-size: 10px;
+}
+
+.InDiv img {
+	width: 100%;
+}
+.InDiv video {
+	width: 100%;
+}
+.InDiv audio {
+	width: 260px;
+	height: 40px;
+}
+
+
+.popup {
+	width: 100%;
+	height: 100%;
+	background-color: #fff7;
+	z-index: 3;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.fullDiv {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.closeBtn {
+	position: absolute;
+	right: 30px;
+	top: 30px;
+	width: 50px;
+	height: 50px;
+	background-color: #000;
+	overflow: hidden;
+	cursor: pointer;
+}
+.closeBtn i {
+	padding: 15px 17px;
+	font-size: 25px;
+	color: #fff;
+}
+.closeBtn:active {
+	background-color: #333;
+}
+
+.inputFrom {
+	width: 400px;
+	padding: 30px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background-color: #fff;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	border: 1px solid #3335;
+}
+
+.inputFrom input {
+	width: 100%;
+	padding: 15px 15px;
+	font-size: 20px;
+	border-radius: 5px;
+	border: 1px scroll #3335;
+	outline: none;
+	margin: 25px 0px;
+	box-sizing: border-box;
+}
+.inputFrom input:last-child {
+	background-color: #075E55;
+	border-radius: 10px;
+	font-size: 18px;
+	color: #fff;
+	border: none;
+	width: 60%;
+	cursor: pointer;
+}
+.inputFrom input:last-child:active {
+	background-color: #35c7b8;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Whatsapp design and development javaScript</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/all.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+
+	<body>
+
+		<div id="popup" class="popup">
+			<div class="fullDiv">
+				<div id="closeBtn" class="closeBtn">
+					<i class="fa-solid fa-xmark"></i>
+				</div>
+				<div class="inputFrom">
+					<input id="inputName" type="text" placeholder="Enter Your Name">
+					<input id="nameSubmit" type="submit" value="Submit">
+				</div>
+			</div>
+		</div>
+
+		<section class="WhatsappSection">
+
+			<header class="haderSection">
+				<div class="imagesAndName">
+					<label class="imagesDiv">
+						<img id="profileImages" src="images/profile.jpg">
+						<input id="inputProfileImages" type="file">
+						<div class="hoverCamera">
+							<i class="fa-solid fa-camera"></i>
+						</div>
+					</label>
+					<h1 class="nameText" id="NameOutpur">Mehedi</h1>
+				</div>
+				<div class="iconDiv">
+					<ul class="iconSetList">
+						<li><i class="fas fa-phone-alt"></i></li>
+						<li><i class="fas fa-paperclip"></i></li>
+						<li><i class="fas fa-ellipsis-v"></i></li>
+					</ul>
+				</div>
+			</header>
+
+			<section class="contentSection">
+				<div id="messageBar" class="messageSection">
+
+					<!-- <div class="messageMe">
+						<div></div>
+						<div class="messTex">
+							<div class="InDiv">
+								<span>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</span>
+								<div class="timeS">
+									<span>5:45 PM</span>
+									<i class="fa-solid fa-check-double"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="messageYou">
+						<div class="messTex">
+							<div class="InDiv">
+								<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</span>
+								<div class="timeS">
+									<span>5:45 PM</span>
+									<i class="fa-solid fa-check-double"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="messageYou">
+						<div class="messTex">
+							<div class="InDiv">
+								<img src="images/profile.jpg">
+								<div class="timeS">
+									<span>5:45 PM</span>
+									<i class="fa-solid fa-check-double"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="messageYou">
+						<div class="messTex">
+							<div class="InDiv">
+								<video controls>
+									<source src="video/1.mp4" type="video/mp4">
+								</video>
+								<div class="timeS">
+									<span>5:45 PM</span>
+									<i class="fa-solid fa-check-double"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="messageYou">
+						<div class="messTex">
+							<div class="InDiv">
+								<audio controls>
+									<source src="audio/1.mp3" type="audio/mp3">
+								</audio>
+								<div class="timeS">
+									<span>5:45 PM</span>
+									<i class="fa-solid fa-check-double"></i>
+								</div>
+							</div>
+						</div>
+					</div> -->
+
+				</div>
+			</section>
+
+			<footer class="footerSection">
+				<div class="inputBox">
+					<label class="fa-solid fa-face-smile"></label>
+					<input id="inputMessage" type="text" placeholder="Type a message">
+					<div class="konaMark"></div>
+					<label class="fa-solid fa-camera">
+						<input id="vidImgPhoto" type="file">
+					</label>
+				</div>
+
+				<div class="VoiceDiv">
+					<div class="voiceSection" id="messageSend">
+						<i class="fa-solid fa-chevron-right"></i>
+					</div>
+				</div>
+			</footer>
+
+		</section>
+
+		<audio id="audioTon">
+			<source src="audio/messenger.mp3" type="audio/mp3">
+		</audio>
+
+	<script src="js/castom.js"></script>
+	</body>
+</html>
